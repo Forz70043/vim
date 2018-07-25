@@ -29,11 +29,30 @@ la Lezione 1.1 riempia completamente lo schermo.
 		Il tasto `l` è a destra e muove a destra.
 		Il tasto `j` ricorda una freccia in giù.
  
-	`^`
-	`k`
-	`< h`		`l >`
-	`j`
-	`v`
+1. Muovi il cursore sullo schermo finchè non ti senti a tuo agio.
+2. Tieni schiacciato il tasto "giù" (`j`) finchè non si ripete il movimento.
+3. Usando il tasto "giù" spostati alla Lezione 1.2 .
+
+**NOTA:** Quando non sei sicuro del tasto che hai premuto, premi `ESC` per andare in Modalità Normale [Normal Mode]. Poi ri-immetti il comando che volevi.
+
+**NOTA:** I tasti con le frecce fanno lo stsso servizio. Ma usando `hjkl` riesci a muoverti molto più rapidamente, dopo che ci si abitua. Davvero!
+
+
+## Lezione 1.2 USCIRE DA VIM
+
+**NOTA:** Prima di eseguire quanto richiesto, leggi la Lezione per intero!!
+
+1. Premi il tasto `ESC` (per assicurarti di essere in Modalità Normale).
+2. Batti: `:q!` `INVIO`. Così esci dall' Editor **scartando** qualsiasi modifica fatta.
+3. Quando vedi il PROMT della Shell, batti il comando con cui sei arrivato qui. Sarebbe: `vimtutor` `INVIO`
+4. Se hai memorizzato questi comandi e ti senti pronto, esegui i passi da 1 a 3 per uscire e rientrare nell'Editor.
+
+**NOTA:** `:q!` `INVIO` SCARTA qualsiasi modifica fatta. In una delle prossime lezioni imparerai come salvare un file che hai modificato.
+
+5. Muovi in giù il cursore per passare alla Lezione 1.3 .
+
+
+## Lezione 1.3 MODIFICA DI TESTI - CANCELLAZIONE
 
 
 
