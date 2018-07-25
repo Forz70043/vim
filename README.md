@@ -70,6 +70,62 @@ la Lezione 1.1 riempia completamente lo schermo.
 
 ## Lezione 1.4: MODIFICA DI TESTI - INSERIMENTO
 
+**Premere** `i` **per inserire del testo**
 
 
+1. Muovi il cursore alla prima linea qui sotto, indicata da --->.
+2. Per rendere la prima linea uguale alla seconda, muovi il cursore sopra il primo carattere DOPO la posizione in cui il testo va inserito.
+3. Premi `i` e batti le aggiunte opportune.
+4. Quando un errore e' corretto, premi `ESC` per tornare in Modalita' Normale. Ripeti i passi da 2 a 4 fino a completare la correzione della frase.
+
+---> C'era del tsto mncnt questa .
+---> C'era del testo mancante in questa linea.
+
+5. Quando sei a tuo agio nell'inserimento di testo vai alla Lezione 1.5.
+
+
+
+## Lezione 1.5: MODIFICA TESTI - AGGIUNTA
+
+**Premere** `A` **per aggiungere testo a fine linea.**
+
+
+1. Muovi il cursore alla prima linea qui sotto, indicata da --->.
+2. Batti `A` e inserisci le necessarie aggiunte.
+3. Alla fine dell'aggiunta premi `ESC` per tornare in Modalita' Normale.
+4. Muovi il cursore alla seconda linea indicata da ---> e ripeti i passa 2 e 3 per correggere questa frase.
+
+--->C'e' del testo che manca da qu
+    C'e' del testo che manca in questa linea.
+--->C'e' anche del testo che ma
+    C'e' anche del testo che manca qui.
+
+5. Quando sei a tuo agio nell'aggiunta del testo vai alla lezione 1.6.
+
+
+## Lezione 1.6: MODIFICARE UN FILE
+
+**Usare** `:wq` **per salvare un file ed uscire**
+
+**NOTA:** Prima di eseguire quanto richiesto, leggi la Lezione per intero!!
+
+1. Esci da Vim come hai fatto nella Lezione 1.2: `:q!`
+2. Quando vedi il PROMPT della Shell, batti il comando: `vim tutor` `INVIO`,
+'vim' e' il comando per richiamare Vim, 'tutor' e' il nome del file che desideri modificare. Usa un file che possa essere modificato.
+3. Inserisci e cancella del testo come hia imparato nelle Lezioni precedenti.
+4. Salva il file ed esci da Vim: `:wq` `INVIO`.
+5. Rientra in vimtutor e scendi al sommario che segue.
+6. Dopo aver letto i passi qui sopra ed averli compresi: eseguili.
+
+#Lezione 1 SOMMARIO
+
+1. Il cursore si muove usando i tasti con le frece o i tasti `hjkl`.
+	`h` sinistra,`j` giu',`k` su,`l` destra
+2. Per eseguire Vim dal PROMPT della Shell batti: `vim NOMEFILE` `INVIO`
+3. Per uscire da Vim batti: `ESC` `:q!` `INVIO` per uscire senza salvare
+			    `ESC` `:wq` `INVIO` per uscire e salvare le modifiche.
+
+**NOTA:** premendo `ESC` ritornerai in Modalita' Normale o annullerai un comando errato che puoi aver inserito in parte.
+
+Ora continua con la Lezione 2.
 
