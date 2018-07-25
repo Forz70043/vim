@@ -61,7 +61,7 @@ la Lezione 1.1 riempia completamente lo schermo.
 3. Premi il tasto `x` per cancellare il carattere sbagliato.
 4. Ripeti i passi 2 a 4 finchè la frase è corretta.
 
----> La mmucca saltòò finnoo allaa lunnnaa.
+...  ---> La mmucca saltòò finnoo allaa lunnnaa.
 
 5. Ora che la linea è corretta, vai alla Lezione 1.4
 
