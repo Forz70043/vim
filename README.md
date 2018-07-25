@@ -31,6 +31,10 @@ la Lezione 1.1 riempia completamente lo schermo.
  
 	`^`
 	`k`
-`< h`		`l >`
+	`< h`		`l >`
 	`j`
 	`v`
+
+
+
+
