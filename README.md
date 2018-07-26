@@ -117,7 +117,7 @@ la Lezione 1.1 riempia completamente lo schermo.
 6. Dopo aver letto i passi qui sopra ed averli compresi: eseguili.
 
 
-##Lezione 1 SOMMARIO
+## Lezione 1 SOMMARIO
 
 1. Il cursore si muove usando i tasti con le frece o i tasti `hjkl`.
 	`h` sinistra,`j` giu',`k` su,`l` destra
@@ -234,11 +234,31 @@ Per la frequenza con cui capita di cancellare linee intere, chi ha disegnato Vi 
 
 ## Lezione 2.7: IL COMANDO UNDO [ANNULLA]
 
-**Premi** `u` **per annullare gli ultimi comandi eseguiti.**
-**Premi** `U` **per annullare le modifiche all'ultima linea.**
+**Premi** `u` **per annullare gli ultimi comandi eseguiti.**  
+**Premi** `U` **per annullare le modifiche all'ultima linea.**  
 
-1. 
+1. Muovi il cursore fino alla linea qui sotto, indicat da --->
+2. Batti `x` per cancellre il primo carattere sbagliato.
+3. Adesso batti `u` per annullare l'ultimo comando eseguito.
+4. Ora invece, correggi tutti gli errori sulla linea usando il comando `x`.
+5. Adesso batti una `U` Maiuscola per riportare la linea al suo stato originale.
+6. Adesso batti `u` più volte per annullare la `U` e i comandi precedenti.
+7. Adesso batti più volte `CTRL` `r` (tenere premuto CTRL metre si preme r) per rieseguire i comandi (annullare l'annullamento).
+
+--->Correeggi gli errori ssu quuesta linea e riimpiazzali con "undo".  
+
+8. Questi comandi sono molto utili. Ora spostati al Sommario della Lezione 2.
+
+## Lezione 2 SOMMARIO
+
+1. Per cancellare dal cursore fino alla parola seguente batti: `dw`.
 2. 
 3.
 4.
+5.
+6.
+7.
+
+
+
 
