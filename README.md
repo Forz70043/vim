@@ -65,7 +65,7 @@ la Lezione 1.1 riempia completamente lo schermo.
 
 5. Ora che la linea è corretta, vai alla Lezione 1.4
 
-**NOTA:** Mentre segui questa guida, non cercare di imparare  memoria, ma impara facendo pratica.
+**NOTA:** Mentre segui questa guida, non cercare di imparare a memoria, ma impara facendo pratica.
 
 
 ## Lezione 1.4: MODIFICA DI TESTI - INSERIMENTO
@@ -90,11 +90,11 @@ la Lezione 1.1 riempia completamente lo schermo.
 
 
 1. Muovi il cursore alla prima linea qui sotto, indicata da --->.
-2. Batti `A` e inserisci le necessarie aggiunte.
-3. Alla fine dell'aggiunta premi `ESC` per tornare in Modalita' Normale.
+2. Batti `A` ed inserisci le necessarie aggiunte.
+3. Alla fine dell'aggiunta premi `ESC` per tornare in Modalità Normale.
 4. Muovi il cursore alla seconda linea indicata da ---> e ripeti i passa 2 e 3 per correggere questa frase.
 
---->C'e' del testo che manca da qu		<br/>
+--->C'e' del testo che manca in qu		<br/>
     C'e' del testo che manca in questa linea. 	<br/>
 --->C'e' anche del testo che ma			<br/>
     C'e' anche del testo che manca qui.		<br/>
@@ -110,14 +110,14 @@ la Lezione 1.1 riempia completamente lo schermo.
 
 1. Esci da Vim come hai fatto nella Lezione 1.2: `:q!`
 2. Quando vedi il PROMPT della Shell, batti il comando: `vim tutor` `INVIO`,
-'vim' e' il comando per richiamare Vim, 'tutor' e' il nome del file che desideri modificare. Usa un file che possa essere modificato.
-3. Inserisci e cancella del testo come hia imparato nelle Lezioni precedenti.
+'vim' e' il comando per richiamare Vim, 'tutor' è il nome del file che desideri modificare. Usa un file che possa essere modificato.
+3. Inserisci e cancella del testo come hai imparato nelle Lezioni precedenti.
 4. Salva il file ed esci da Vim: `:wq` `INVIO`.
 5. Rientra in vimtutor e scendi al sommario che segue.
 6. Dopo aver letto i passi qui sopra ed averli compresi: eseguili.
 
 
-#Lezione 1 SOMMARIO
+##Lezione 1 SOMMARIO
 
 1. Il cursore si muove usando i tasti con le frece o i tasti `hjkl`.
 	`h` sinistra,`j` giu',`k` su,`l` destra
@@ -130,9 +130,9 @@ la Lezione 1.1 riempia completamente lo schermo.
 Ora continua con la Lezione 2.
 
 
-# Lezione 2.1: COMANDI DI CANCELLAZIONE
+## Lezione 2.1: COMANDI DI CANCELLAZIONE
 
-**BAtti** `dw` **per cancellare una parola**
+**Batti** `dw` **per cancellare una parola.**
 
 1. Premi `ESC` per accertarti di essere in Modalità Normale.
 2. Muovi il cursore fino alla linea qui sotto, indicata da --->.
@@ -146,6 +146,45 @@ Ora continua con la Lezione 2.
 5. Ripeti i passi 3 e 4 finchè la frase è corretta, poi vai alla Leione 2.2.
 
 
-#Lezione 2.2: ALTRI COMANDI DI CANCELLAZIONE
+##Lezione 2.2: ALTRI COMANDI DI CANCELLAZIONE
+
+
+**Batti** `d$` **per cancellare fino a fine linea.**
+
+1. Premi `ESC` per accertarti di essere in Modalità Normale.
+2. Muovi il cursore fino alla linea qui sotto, indicata da --->.
+3. Muovi il cursore alla fine della linea corretta (DOPO il primo .).
+4. Batti `d$` per cancellare fino a fine linea.
+
+---> Qualcuno ha battuto la fine di questa linea due volte. linea due volte.
+
+5. Vai allaLezione 2.3 per capire il funzionamento di questo comando.
+
+
+##Lezione 2.3: OPERATORI E MOVIMENTI
+
+
+Molti comandi di modifica testi consistono in un operatore e un movimento.
+Il formato del comando di cancellazione con l'operatore `d` è il seguente:
+`d` movimento
+
+Dove:
+* `d` è l'operatore di cancellazione
+* `movimento` indica dove l'operatore va applicato (lista qui sotto).
+
+Breve lista di movimenti:
+* `w` fino a inizio della parola seguente, ESCLUSO il suo primo carattere.
+* `e` alla fine della parola corrente, COMPRESO il suo ultimo carattere.
+* `$` dal cursore fino a fine linea, COMPRESO l'ultimo carattere della linea.
+
+Quindi se batti `de` cancelli dal cursore fino a fine parola.
+
+**NOTA:** Se batti solo il movimento mentre sei in Modalità Normale, sena nessun operatore, il cursore si muoverà come specificato.
+
+
+
+##Lezione 2.4: USO DI UN CONTATORE PER UN MOVIMENTO 
+
+
 
 
