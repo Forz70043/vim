@@ -78,11 +78,10 @@ la Lezione 1.1 riempia completamente lo schermo.
 3. Premi `i` e batti le aggiunte opportune.
 4. Quando un errore e' corretto, premi `ESC` per tornare in Modalita' Normale. Ripeti i passi da 2 a 4 fino a completare la correzione della frase.
 
----> C'era del tsto mncnt questa .
+---> C'era del tsto mncnt questa .<br/>
 ---> C'era del testo mancante in questa linea.
 
 5. Quando sei a tuo agio nell'inserimento di testo vai alla Lezione 1.5.
-
 
 
 ## Lezione 1.5: MODIFICA TESTI - AGGIUNTA
@@ -95,10 +94,10 @@ la Lezione 1.1 riempia completamente lo schermo.
 3. Alla fine dell'aggiunta premi `ESC` per tornare in Modalita' Normale.
 4. Muovi il cursore alla seconda linea indicata da ---> e ripeti i passa 2 e 3 per correggere questa frase.
 
---->C'e' del testo che manca da qu
-    C'e' del testo che manca in questa linea.
---->C'e' anche del testo che ma
-    C'e' anche del testo che manca qui.
+--->C'e' del testo che manca da qu		<br/>
+    C'e' del testo che manca in questa linea. 	<br/>
+--->C'e' anche del testo che ma			<br/>
+    C'e' anche del testo che manca qui.		<br/>
 
 5. Quando sei a tuo agio nell'aggiunta del testo vai alla lezione 1.6.
 
