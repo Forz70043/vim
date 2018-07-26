@@ -249,15 +249,117 @@ Per la frequenza con cui capita di cancellare linee intere, chi ha disegnato Vi 
 
 8. Questi comandi sono molto utili. Ora spostati al Sommario della Lezione 2.
 
+
+
 ## Lezione 2 SOMMARIO
 
 1. Per cancellare dal cursore fino alla parola seguente batti: `dw`.
-2. 
-3.
-4.
-5.
-6.
-7.
+2. Per cancellare dal cursore fino alla fine della linea batti: `d$`. 
+3. Per cancellare un'intera linea batti: `dd`.
+4. Per eseguire più volte un movimento, mettici davanti un numero: `2w`
+5. Il formato per un comando di modifica è:  
+
+  operatore [numero] movimento  
+
+  dove:
+* operatore: indica il da farsi, ad es. `d` per [delete] cancellare  
+* [numero]:  contatore facoltativo di ripetizione del movimento
+* movimento: spostamento nel testo su cui operare, ad es.  
+  `w` [word] parola, `$` (fino a fine linea), etc
+6. Per andare a inizio linea usate uno zero: 	`0` 
+7. Per annullare i comandi precedenti, batti:	`u` (minuscola)
+    Per annullare tutte le modiche a una linea batti: `U` (Maiuscola)
+    Per annullare l'annullamento ["redo"] batti: `CTRL` `r`
+
+
+## Lezione 3.1: IL COMANDO PUT [METTI, PONI]
+
+**Batti** `p` **per porre [put] testo (cancellato prima) dopo il cursore.**
+
+1. Muovi il cursore alla prima linea indicata da ---> qui in basso.
+2. Batti `dd` per cancellare la linea e depositarla in un registro di Vim.
+3. Muovi il cursore fino alla linea c) SOPRA quella dove andrebbe messa la linea appena cancellata.
+4. Batti `p` per mettere la linea sotto il cursore.
+5. Ripeti i passi da 2 a 4 per mettere tutte le linee nel giusto ordine.
+
+---> d) Puoi impararla tu?  
+---> b) Le viole sono blu,
+---> c) La saggezza si impara,
+---> a) Le rose sono rosse,
+
+
+## Lezione 3.2: IL COMANDO REPLACE [RIMPIAZZARE]
+
+**Batti** `rx` **per rimpiazzare il carattere sotto al cursore con x .**
+
+1. Muovi il cursore alla prima linea qui sotto, indicata da --->.
+2. Muovi il cursore fino a posizionarlo sopra il primo errore.
+3. Batti r e poi il carattere che dovrebbe stare qui 
+4. Ripeti i passi 2 e 3 finche' la prima linea e' uguale alle seconda.
+
+---> Ammattendo quetta lince, qualcuno ha predato alcuni tosti sballiati!  
+---> Immettendo questa linea, qualcuno ha premuto alcuni tasti sbagliati!  
+
+5. Ora passa alla Lezione 3.2.
+
+**NOTA:** Ricordati che dovresti imparare con la pratica, non solo leggendo.
+
+
+## Lezione 3.3: L'OPERATORE CHANGE [CAMBIA]
+
+**Per cambiare fino alla fine di una parola, batti** `ce`.
+
+1. Muovi il cursore alla prima linea qui sotto, indicata da --->
+2. Posiziona il cursore alla `u` in lubw
+3. Batti `ce` e la parola corretta (in questo caso, batti inea ). 
+4. Premi `ESC` e vai sul prossimo carattere da modificare.
+5. Ripeti i passi 3 e 4 finche' la prima frase e' uguale alla seconda.
+
+---> Questa lubw ha alcune pptfd da asdert usgfk l'operatore CHANGE.  
+---> Questa linea ha alcune parole da cambiare usando l'operatore CHANGE.
+
+**Nota che** `ce` **cancella la parola e ti mette anche in Modalita' Inserimento [Insert Mode]**
+
+
+## Lezione 3.4: ALTRI CAMBIAMENTI USANDO c
+
+**L'operatore** `c` **[CHANGE] agisce sugli stessi movimenti di** `d` **[DELETE]**
+
+1. L'operatore CHANGE si comporta come DELETE. Il formato e':
+	`c` [numero] movimento
+2. I movimenti sono gli stessi: `w` (word,parola), `$` (fine linea), etc.
+3. Muovi il cursore alla prima linea qui sotto, indicata da --->.
+4. Posiziona il cursore al primo errore.
+5. Batti `c$` e inserisci resto della linea utilizzando come modello la linea seguente e quando hai finito premi `ESC`
+
+---> La fine di questa linea deve essere aiutata a divenire come la seguente.
+---> La fine di questa linea deve essere corretta usando il comando `c$`.
+
+**NOTA:** Puoi usare il tasto Backspace se devi correggere errori di battitura.
+
+## Lezione 3 SOMMARIO
+
+1. Per iniziare del testo appena cancellato, batti `p` .Questo inserisce [pone] il testo cancellato DOPO il cursore (se era stata tolta una linea intera, questa verra' messa nella linea SOTTO il cursore)
+2. Per rimpiazzare il carattere sotto il cursore, batti `r` e poi il carattere che vuoi sostituire.
+3. L'operatore change ti permette di cambiare dal cursore fino a dove arriva il movimento. Ad es. Batti `ce` per cambiare dal cursore fino alla fine della parola, `c$` per cambiare finoi alla linea.
+4. Il formato di `change` e':
+	`c` [numero] `movimento`
+
+Ora vai alla prossima Lezione.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
