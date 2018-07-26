@@ -146,7 +146,7 @@ Ora continua con la Lezione 2.
 5. Ripeti i passi 3 e 4 finchè la frase è corretta, poi vai alla Leione 2.2.
 
 
-##Lezione 2.2: ALTRI COMANDI DI CANCELLAZIONE
+## Lezione 2.2: ALTRI COMANDI DI CANCELLAZIONE
 
 
 **Batti** `d$` **per cancellare fino a fine linea.**
@@ -158,10 +158,10 @@ Ora continua con la Lezione 2.
 
 ---> Qualcuno ha battuto la fine di questa linea due volte. linea due volte.
 
-5. Vai allaLezione 2.3 per capire il funzionamento di questo comando.
+5. Vai alla Lezione 2.3 per capire il funzionamento di questo comando.
 
 
-##Lezione 2.3: OPERATORI E MOVIMENTI
+## Lezione 2.3: OPERATORI E MOVIMENTI
 
 
 Molti comandi di modifica testi consistono in un operatore e un movimento.
@@ -182,9 +182,63 @@ Quindi se batti `de` cancelli dal cursore fino a fine parola.
 **NOTA:** Se batti solo il movimento mentre sei in Modalità Normale, sena nessun operatore, il cursore si muoverà come specificato.
 
 
+## Lezione 2.4: USO DI UN CONTATORE PER UN MOVIMENTO 
 
-##Lezione 2.4: USO DI UN CONTATORE PER UN MOVIMENTO 
+**Se batti un numero prima di un movimento, lo ripeti altrettante volte.**
+
+1. Muovi il cursore fino all'inizio della linea qui sotto, indicata da --->
+2. Batti `2w` per spostare il cursore due parole più avanti.
+3. Batti `3e` per spostare il cursore alla fine della terza parola seguente.
+4. Batti `0` (zero) per posizionarti all'inizio della linea.
+5. Ripeti i passi 2 e 3 usando numeri differenti.
+
+---> Questa è solo una linea con parole all'interno della quale puoi muoverti.
+
+6. Vai alla Lezione 2.5.
+
+
+## Lezione 2.5: USO DI UN CONTATORE PER CANCELLARE DI PIU'
+
+**Se batti un numero prima di un movimento, lo ripeti altrettante volte.**
+
+Nella combinazione dell'operatore cancella e di un movimento, descritto prima, inserite un contatore prima del movimento per cancellare di più:
+
+1. Muovi il cursore alla prima parola MAIUSCOLA nella riga indicata da --->.
+2. Batti `d2w` per cancellare le due parole MAIUSCOLE
+3. Ripeti i passi 1 e 2 con un contatore diverso per cancellare le parole MAIUSCOLE consecutive con un solo comando
+
+---> questa ABC DE linea FGHI JK OP di parole è Q RS TUV ora ripulita.
 
 
 
+## Lezione 2.6: LAVORARE SU LINEE INTERE
+
+**Batti** `dd` **per cancellare un'intera linea.**
+
+Per la frequenza con cui capita di cancellare linee intere, chi ha disegnato Vi ha deciso che sarebbe stato più semplice battere due d consecutive per cancellare una linea.
+
+1. Muovi il cursore alla linea 2) nella frase qui sotto.
+2. Batti `dd` per cancellare la linea.
+3. Ora spostati alla linea 4).
+4. Batti `2dd` per cancellare due linee.
+
+---> 1) Le rose sono rosse,  
+---> 2) Il fango è divertente,  
+---> 3) Le viole sono blu,  
+---> 4) Io ho un'automobile,  
+---> 5) Gli orologi segnano il tempo,  
+---> 6) Lo zucchero è dolce,  
+---> 7) E così sei anche tu.  
+
+
+
+## Lezione 2.7: IL COMANDO UNDO [ANNULLA]
+
+**Premi** `u` **per annullare gli ultimi comandi eseguiti.**
+**Premi** `U` **per annullare le modifiche all'ultima linea.**
+
+1. 
+2. 
+3.
+4.
 
