@@ -61,7 +61,7 @@ la Lezione 1.1 riempia completamente lo schermo.
 3. Premi il tasto `x` per cancellare il carattere sbagliato.
 4. Ripeti i passi 2 a 4 finchè la frase è corretta.
 
-⋅⋅⋅---> La mmucca saltòò finnoo allaa lunnnaa.
+	---> La mmucca saltòò finnoo allaa lunnnaa.
 
 5. Ora che la linea è corretta, vai alla Lezione 1.4
 
@@ -332,8 +332,8 @@ Per la frequenza con cui capita di cancellare linee intere, chi ha disegnato Vi 
 4. Posiziona il cursore al primo errore.
 5. Batti `c$` e inserisci resto della linea utilizzando come modello la linea seguente e quando hai finito premi `ESC`
 
----> La fine di questa linea deve essere aiutata a divenire come la seguente.
----> La fine di questa linea deve essere corretta usando il comando `c$`.
+---> La fine di questa linea deve essere aiutata a divenire come la seguente.  
+---> La fine di questa linea deve essere corretta usando il comando `c$`.    
 
 **NOTA:** Puoi usare il tasto Backspace se devi correggere errori di battitura.
 
@@ -348,6 +348,35 @@ Per la frequenza con cui capita di cancellare linee intere, chi ha disegnato Vi 
 Ora vai alla prossima Lezione.
 
 
+##Lezione 4.1: POSIZIONAMENTO E SITUAZIONE FILE
+
+**Batti** `CTRL` `G` **per vedere a che punto sei nel file e la situazione del file.**  
+**Batti** `G` **per raggiungere una linea nel file.**
+
+**NOTA:** Leggi l'intera Lezione prima di eseguire un qualsiasi passo!!
+
+1. Tieni premuto il tasto `CTRL` e batti `g`. Ossia batti `CTRL` `G`.  
+   Un messaggio apparira' in fondo alla pagina con il NOME FILE e la posizione nel file.  
+Ricordati il numero della linea per il passo 3.  
+
+**NOTA:** La posizione del cursore si vede nell'angolo in basso a destra dello schermo, se e' impostata l'opzione 'ruler` (righello,vedi `:help ruler`).  
+2. Premi `G` [G Maiuscolo] per posizionarti in fondo al file.  Batti `gg` per posizionarti in cima al file.
+3. Batti il numero della linea in cui ti trovavi e poi `G`.  Questo ti riportera' fino alla fine in cui ti trovavi quando avevi premuto `CTRL` `g`.
+4. Se ti senti sicuro nel farlo, esegui passi da 1 a 3.
+
+
+## Lezione 4.2: IL COMANDO SEARCH [RICERCA]
+
+**Batti** `/` ** seguito da una frase per ricercare quella frase**  
+
+1. In Modalita' Normale batti il carattere `/`.  Nota che la "/" e il cursore sono visibili in fondo dello schermo come quando si usa il comando `:` .  
+2. Adesso batti `errroore` `INVIO`.  Questa e' la parola che vuoi ricercare.
+3. Per ricercare ancora la stessa frase, batti `n`.  Per ricercare la stessa frase in direzione opposta, batti `N`.  
+4. Per ricercare una frase nella direzione opposta, usa `?` al posto di `/`.  
+5. Per tornare dove eri prima nel file premi `CTL` `O` (tieni premuto `CTRL` mentre premi la lettera O).  Ripeti `CTRL` `O` per andare ancora indietro.  Puoi usare `CTRL` `I` per tornare in avanti.  
+
+---> "errroore" non e' il modo giusto di digitare errore;  errrore e' un errore.  
+**NOTA:** Quando la ricerca arriva a fine file, ricomincia dall'inizio del file, a me che l'opzione 'wrapscan' sia stata disattivata.  
 
 
 
