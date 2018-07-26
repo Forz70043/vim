@@ -116,6 +116,7 @@ la Lezione 1.1 riempia completamente lo schermo.
 5. Rientra in vimtutor e scendi al sommario che segue.
 6. Dopo aver letto i passi qui sopra ed averli compresi: eseguili.
 
+
 #Lezione 1 SOMMARIO
 
 1. Il cursore si muove usando i tasti con le frece o i tasti `hjkl`.
@@ -127,4 +128,24 @@ la Lezione 1.1 riempia completamente lo schermo.
 **NOTA:** premendo `ESC` ritornerai in Modalita' Normale o annullerai un comando errato che puoi aver inserito in parte.
 
 Ora continua con la Lezione 2.
+
+
+# Lezione 2.1: COMANDI DI CANCELLAZIONE
+
+**BAtti** `dw` **per cancellare una parola**
+
+1. Premi `ESC` per accertarti di essere in Modalità Normale.
+2. Muovi il cursore fino alla linea qui sotto, indicata da --->.
+3. Muovi il cursore all'inizio di una parola che vuoi cancellare.
+4. Batti `dw` per cancellare la parola.
+
+**NOTA:** La lettera `d` sarà visibile sull'ultima linea dello schermo mentre la batti. Vim attende che tu batta `w`. Se vedi una lettera diversa da `d` hai battuto qualcosa di sbagliato; premi `ESC` e ricomincia.
+
+---> Ci sono le alcune parole gioia che non c'entrano carta in questa frase.
+
+5. Ripeti i passi 3 e 4 finchè la frase è corretta, poi vai alla Leione 2.2.
+
+
+#Lezione 2.2: ALTRI COMANDI DI CANCELLAZIONE
+
 
