@@ -355,11 +355,10 @@ Ora vai alla prossima Lezione.
 
 **NOTA:** Leggi l'intera Lezione prima di eseguire un qualsiasi passo!!
 
-1. Tieni premuto il tasto `CTRL` e batti `g`. Ossia batti `CTRL` `G`.  
-   Un messaggio apparira' in fondo alla pagina con il NOME FILE e la posizione nel file.  
+1. Tieni premuto il tasto `CTRL` e batti `g`. Ossia batti `CTRL` `G`.  Un messaggio apparira' in fondo alla pagina con il NOME FILE e la posizione nel file.  
 Ricordati il numero della linea per il passo 3.  
 
-**NOTA:** La posizione del cursore si vede nell'angolo in basso a destra dello schermo, se e' impostata l'opzione 'ruler` (righello,vedi `:help ruler`).  
+**NOTA:** La posizione del cursore si vede nell'angolo in basso a destra dello schermo, se e' impostata l'opzione `ruler` (righello, vedi `:help ruler`).  
 2. Premi `G` [G Maiuscolo] per posizionarti in fondo al file.  Batti `gg` per posizionarti in cima al file.
 3. Batti il numero della linea in cui ti trovavi e poi `G`.  Questo ti riportera' fino alla fine in cui ti trovavi quando avevi premuto `CTRL` `g`.
 4. Se ti senti sicuro nel farlo, esegui passi da 1 a 3.
@@ -367,7 +366,7 @@ Ricordati il numero della linea per il passo 3.
 
 ## Lezione 4.2: IL COMANDO SEARCH [RICERCA]
 
-**Batti** `/` ** seguito da una frase per ricercare quella frase**  
+**Batti** `/` **seguito da una frase per ricercare quella frase**  
 
 1. In Modalita' Normale batti il carattere `/`.  Nota che la "/" e il cursore sono visibili in fondo dello schermo come quando si usa il comando `:` .  
 2. Adesso batti `errroore` `INVIO`.  Questa e' la parola che vuoi ricercare.
@@ -379,16 +378,63 @@ Ricordati il numero della linea per il passo 3.
 **NOTA:** Quando la ricerca arriva a fine file, ricomincia dall'inizio del file, a me che l'opzione 'wrapscan' sia stata disattivata.  
 
 
+## Lezione 4.3: RICERCA DI PARENTESI CORRISPONDENTI
+
+**Batti** `%` **per trovare una ),] o } corrispondente.**
+
+1. Posiziona il cursore su una (,[ o { nella linea otto, indicata da --->
+2. Adesso batti il carattere `%`
+3. Il cursore si spostera' sulla parentesi corrispondente 
+4. Batti `%` per muovere il cursore all'altra parentesi corrispondente.  
+
+---> Questa ( e' una linea di test con (, [ ] e { } al suo interno ))  
+
+**NOTA:**  Qusto e' molto utile nel "debug" di un programma con parentesi errate!
 
 
+## Lezione 4.4: L'OPERATORE SOSTITUZIONE (SUBSTITUTE)
+
+**Batti** `s:/vecchio/nuovo/g` **per sostituire 'nuovo' a 'vecchio'**  
+
+1. Muovi il cursore fino alla linea qui sotto, indicata da --->. 
+2. Batti `s:/lla/la/g` .  Aggiungendo il flag g si chiede di sostituire "globalmente" sulla linea, ossia tutte le occorenze di "lla" sulla linea.  
+
+--->  lla stagione migliore per lla fioritura e' lla primavera.
+
+4. Per cambiare ogni ricorrenza di una stirnga di caratteri tra due linee, batti `#,#s/vecchio/nuovo/g` dove  
+  #,# sono i numeri che delimitano il gruppo di linee in cui si vuole sostituire.  
+  Batti `:%s/vecchio/nuovo/g` per cambiare ogni occorenza nell'intero file.  
+  Batti `%s/vecchio/nuovo/gc`  per trovare ogni occorenza nell'intero file ricevendo per ognuna una richiesta se effettuare o meno la sostituzione.  
 
 
+## Lezione 4 SOMMARIO
+
+1. `CTRL-G` visualizza a che punto sei nel file e la situazione del file.  `G` [G Maiuscolo] ti porta all'ultima linea del file.  
+`numero G` ti porta alla linea con quel numero.  
+`gg` ti porta alla prima linea del file.  
+2. Battendo `/` seguito da una frase ricerca IN AVANTI quella frase.  
+Battendo `?` seguito da una frase ricerca ALL'INDIETRO quella frase.  
+DOPO una ricerca batti `n` per trovare la prossima occorenza nella stessa direzione, oppure `N` per cercare in direzione opposta.  
+`CTRL-O` ti porta alla posizione precedente, `CTRL-I` a quella piu' nuova.  
+3. Battendo `%` mentre il cursore si trova su (,),[,],{, oppure } ti posizioni sulla corrispondente parentesi.  
+4. Per sostituire "nuovo" al primo "vecchio" in 1 linea batti `:s/vecchio/nuovo`  
+  Per sostituire "nuovo" ad ogni "vecchio" in 1 linea batti `s:/vecchio/nuovo/g`  
+  Per sostituire frasi tra due numeri di linea [#] batti `#,#s/vecchio/nuovo/g`  
+  Per sostituire tutte le occorenze nel file batti `:%s/vecchio/nuovo/g`  
+  Per chiedere conferma ogni volta aggiungi 'c' `:%s/vecchio/nuovo/gc`  
 
 
+## Lezione 5.1: COME ESEGUIRE UN COMANDO ESTERNO 
 
+**Batti** `:!` **seguito da un comando esterno per eseguire quel comando**
 
+1. Batti il comando `:` per posizionare il cursore in fondo allo schermo.  Cio' ti permette di immettere un comando alla linea comandi.  
+2. Adesso batti il carattere `!` (punto esclamativo).  Cio' ti permette di eseguire qualsiasi comando esterno si possa eseguire nella "shell".  
+3. Ad esempio batti `ls` dopo il `!` e poi premi `INVIO`.  Questo visualizza una lista della tua directoru, proprio come se fossi in una "shell".  Usa `:!dir` se `ls` non funziona.[Unix: ls MS-DOS: dir]  
 
+**Nota:** E' possinbile in questo modo eseguire un comando a piacere, specificando anche dei parametri per i comandi stessi.  
 
+**Nota:** Tutti i comandi `:` devono essere terminati premendo `INVIO`.  Da qui in avanti non li ripeteremo ogni volta.  
 
 
 
