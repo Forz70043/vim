@@ -432,8 +432,7 @@ DOPO una ricerca batti `n` per trovare la prossima occorenza nella stessa direzi
 2. Adesso batti il carattere `!` (punto esclamativo).  Cio' ti permette di eseguire qualsiasi comando esterno si possa eseguire nella "shell".  
 3. Ad esempio batti `ls` dopo il `!` e poi premi `INVIO`.  Questo visualizza una lista della tua directoru, proprio come se fossi in una "shell".  Usa `:!dir` se `ls` non funziona.[Unix: ls MS-DOS: dir]  
 
-**Nota:** E' possinbile in questo modo eseguire un comando a piacere, specificando anche dei parametri per i comandi stessi.  
-
+**Nota:** E' possibile in questo modo eseguire un comando a piacere, specificando anche dei parametri per i comandi stessi.  
 **Nota:** Tutti i comandi `:` devono essere terminati premendo `INVIO`.  Da qui in avanti non li ripeteremo ogni volta.  
 
 
