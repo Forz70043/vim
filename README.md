@@ -562,3 +562,22 @@ DOPO una ricerca batti `n` per trovare la prossima occorenza nella stessa direzi
 7. Usa il prefisso "no" per annullare un'opzione: `:set noic`.  
 
 
+## Lezione 7.1: OTTENERE AIUTO
+
+**Usa il sistema aiuto on-line**
+
+Vim ha un esauriente sistema di aiuto on-line.  Per cominciare, prova una di queste alternative:  
+	premi il tasto `AIUTO`(se ce n'e' uno).  
+	premi il tasto `F1` (se ce n'e' uno).  
+	batti `:help INVIO` OPPURE `:h INVIO`
+
+Leggi il testo nella finestra di aiuto per vedere come funziona l'aiuto.  
+Batti `CTRL-W CTRL-W` per passare da una finestra all'altra.  Batti `:q INVIO` per chiudere la finestra di aiuto.  
+
+Puoi trovare aiuto su quasi tutto, dando un argomento al comando `:help`.  Prova questi (non dimenticare di premere `INVIO`):  
+	`:help w`  
+	`:help c_CTRL-D`  
+	`:help insert-index`  
+	`:help user-manual`  
+
+  
