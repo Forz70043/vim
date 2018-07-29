@@ -580,4 +580,67 @@ Puoi trovare aiuto su quasi tutto, dando un argomento al comando `:help`.  Prova
 	`:help insert-index`  
 	`:help user-manual`  
 
-  
+ 
+## Lezione 7.2: PREPARARE UNO SCRIPT INIZIALE
+
+**Attiva le opzioni Vim**
+
+1. Comincia a editare il file "vimrc". Questo dipende dal tuo sistema:  
+	`:e ~/`vimrc` per Unix  
+	`:e $VIM/_vimrc` per MS-Windows  
+2. Ora leggi i contenuti del file "vimrc" distribuito come esempio:  
+	`:r $VIMRUNTIME/vimrc_example.vim`  
+3. Scrivi il file con:  `:w`  
+
+La prossima volta che apri Vim, sara' abilitata la colorazione sintattica.  Puoi aggoiungere a questo file "vimrc" tutte le tue impostazioni preferite.  Per maggiorni informazioni bati: `:help vimrc-intro`.  
+
+
+## Lezione 7.3: COMPLETAMENTO  
+
+**Completamento linea comandi con** `CtRL-D` **e** `TAB`  
+
+1. IMposta Vim in modalita' compatibile: `:set nocp`  
+2. Guarda i file esistenti nella directory: `:!ls` o `:!dir`  
+3. Batti l'inizio di un comando: `:e`  
+4. Premi `CTRL-D` e Vim ti mostra una lista di comandi che iniziano per "e".  
+5. Premi `TAB` e Vim completa per te il nome del comando come `:edit`.  
+6. Ora batti uno spazio e l'inizio del nome di un file esistente: `:edit FIL`.  
+7. Premi `TAB`. Vim completera' il nome del file (se e' il solo possibile).  
+
+**NOTA:** Il completamento e' disponibile per molti comandi.  Prova a battere `CTRL-D` e `TAB`.  Particolarmente utile per `:help`.  
+
+
+## Lezione 7 SOMMARIO  
+
+1. Batti `:help` o premi `F1` o `Help` per aprire una finestra di aiuto.  
+2. Bati `:help comando` per avere aiuto su comando.  
+3. Batti `CTRL-W` per saltare alla prossima finestra.  
+4. Batti `:q` per chiudere la finestra di aiuto.  
+5. Crea uno script iniziale vimrc contenente le tue impostazioni preferite.  
+6. Mentre bati un comando :, premi `CTRL-D` per vedere i possibili completamenti.  Premi `TAB` per usare il completamento desiderato.  
+
+
+
+Qui finisce la Guida a Vim.  Il suo intento è di fornire una breve panoramica dell'Editor Vim, che ti consenta di usare l'Editor abbastanza facilmente.  
+Questa guida è largamente incompleta poiché Vim ha moltissimi altri comandi.  Puoi anche leggere il manuale utente (anche in italiano): ":help user-manual".
+
+Per ulteriore lettura e studio, raccomandiamo:  
+        Vim - Vi Improved - di Steve Oualline     Editore: New Riders  
+  Il primo libro completamente dedicato a Vim. Utile specie per principianti.  
+  Contiene molti esempi e figure.  
+  Vedi http://iccf-holland.org/click5.html  
+
+  Quest'altro libro è più su Vi che su Vim, ma è pure consigliato:  
+        Learning the Vi Editor - di Linda Lamb e Arnold Robbins  
+        Editore: O'Reilly & Associates Inc.  
+  E' un buon libro per imparare quasi tutto ciò che puoi voler fare con Vi.  
+  Ne esiste una traduzione italiana, basata su una vecchia edizione.  
+
+  Questa guida è stata scritta da Michael C. Pierce e Robert K. Ware,  
+  Colorado School of Mines, usando idee fornite da Charles Smith,  
+  Colorado State University - E-mail: bware@mines.colorado.edu  
+  Modificato per Vim da Bram Moolenaar.  
+  Segnalare refusi ad Antonio Colombo - E-mail: azc100@gmail.com  
+  Vedi http://iccf-holland.org/click5.html
+
+
