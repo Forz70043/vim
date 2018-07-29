@@ -437,4 +437,84 @@ DOPO una ricerca batti `n` per trovare la prossima occorenza nella stessa direzi
 
 
 
+## Lezione 5.2: ANCORA SULLA SCRITTURA DEI FILE
+
+**Batti** `:!` **seguito da un comando esterno per eseguire quel comando**
+
+1. Batti il comando `:` per posizionare il cursore in fondo allo schermo.  Cio' ti permette di mmettere un comando dalla linea comandi.  
+2. Adesso batti il carattere `!` (punto esclamativo).  Cio' ti permette di eseguire qualsiasi comando esterno si possa eseguire nella "shell".  
+3. Ad esempio batti `ls` dopo il `!` e poi premi `INVIO`.  Questo visualizza una lista della tua directory, proprio come se fossi in una "shell".  Usa `:!dir` se `ls` non funziona [Unix: ls MS-DOS: dir]
+
+**Nota:** Se esci da Vim e riesegui Vim battendo `vim TEST`, il file aperto sara' una copia esatta di 'tutor.it' al momento del salvataggio 
+5. Ora cancella il file battendo (MS-DOS): `:!del TEST` o (Unix): `:!rm TEST` .  
+
+
+## Lezione 5.3: SELEZIONARE IL TESTO DA SCRIVERE  
+
+**Per salvare una porzione di file, batti** `v movimento :w NOMEFILE` .  
+
+1. Muovi il cursore su questa linea.  
+2. Premi `v` e muovi il cursore fino alla linea numerata 5, qui sotto .  Nota che il testo viene evidenziato.  
+3. Batti il carattere `:`, in fondo allo schermo apparira' `:'<,'>` .  
+4. Batti `w TEST`, dove `TEST` e' il nome di un file non ancora esistente .  Verifica che si veda `:'<,'>W TEST` prima di dare `INVIO`.  
+5. Vim scrivera' nel file TEST le linee che hai selezionato.  Usa `:!dir` o `:!ls` per controllare che esiste.  Non cancellarlo ora! Ti servira' nella prossima lezione.  
+
+**Nota:** Battere `v` inizia una selezione visuale.  Puoi muore il cursore come vuoi e rendere la selezione piu' piccola o piu' grande .  Poi puoi usare un operatore per agire sul testo selezionato. Ad es: `d` cancella il testo.  
+
+
+## Lezione 5 SOMMARIO 
+
+1. `:!comando` esegue un comando esterno.  Alcuni esempi utili sono [in MSDOS]:  `:!dir` visualizza lista directory  `:!del NOMEFILE` cancella file NOMEFILE.
+2. `:w NOMEFILE` scrive su disco il file che stai editando con NOMEFILE.  
+3. `v movimento :w NOMEFILE` da disco e lo inserisce nel file che stai modificando, dopo la linea in cui e' posizionato il cursore.  
+4. `:r NOMEFILE` legge il file NOMEFILE da disco e lo inserisce nel file che stai modificando, dopo la lina in cui e' posizionato il cursore.  
+5. `:r !dir` legge l'output del ocmando dir e lo inserisce dopo la linea in cui e' posizionato il cursore.  
+
+
+## Lezione 6.1: IL COMANDO OPEN [APRIRE]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
