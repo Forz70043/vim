@@ -473,48 +473,92 @@ DOPO una ricerca batti `n` per trovare la prossima occorenza nella stessa direzi
 
 ## Lezione 6.1: IL COMANDO OPEN [APRIRE]
 
+**Batti** `o` **per aprire una linea sotto il cursore e passare in Modalita' Inserimento.**
+
+1. Muovi il cursore fino alla linea qui sotto, indicata da --->.
+2. Batti la lettera minuscola `o` per aprire una linea sotto il cursore e passare in Modalita' Inserimento .
+3. Poi inserisci del testo e premi `ESC` per uscire dalla Modalita' Inserimento.  
+
+---> Dopo battuto `o` il cursore e' sulla linea aperta (in Modalita' Inserimento).  
+
+4. Per aprire una linea SOPRA il cursore, batti una `O` maiuscola, invece che una `o` minuscola.  Prova sulla linea qui sotto.  
+
+---> Apri una linea SOPRA questa battendo `O` mentre il cursore e' su questa linea.   
 
 
+## Lezione 6.2: IL COMANDO APPEND [AGGIUNGERE]
+
+**Batti** `a` **per inserire testo DOPO il cursore .**  
+
+1. Muovi il cursore all'inizio della liunea qui sotto, indicata da --->
+2. Batti `e` finche' il cursore arriva alla fine di  li.  
+3. batti una `a` (minuscola) per aggiungere testo DOPO il cursore.  
+4. Completa la parola come mostrato nella linea successiva.  Premi `ESC` per uscire dalla Modalita' Inserimento.  
+5. Usa `e` per passare alla successiva parola incompleta e ripeti i passi 3 e 4.  
+
+---> Questa li yti permettera' di esercit ad aggiungere testo a una linea.  
+---> Questa linea ti permettera' di esercitarti ad aggiungere testo a una linea.  
+
+**NOTA:** `a`,`i` ed `A` entrano sempre in Modalita' Iserimento, la sola differenza e' dove verranno inseriti i caratteri .  
 
 
+## Lezione 6.3: UN ALTRO MODO DI RIMPIAZZARE [REPLACE]
+
+**Bati una** `R` **maiuscola per rimpiazzare piu' di un carattere**
+
+1. Muovi il cursore alla prima linea qui sotto, indicata da --->.  Muovi il cursore all'inizio del primo xxx.  
+2. Ora batti `R` e batti il numero che vedi nella linea seguente, in modo che rimpiazzi l' xxx.  
+3. Premi `ESC` per uscire dalla Modalita' Replace.  Nota che il resto della linea resta invariato.  
+4. Ripeti i passi in mododa rimpiazzare l'altro xxx.  
+
+---> Aggiungendo 123 a xxx si ottiene xxx.  
+---> Aggoiungendo 123 a 456 si ottiene 579.  
+
+**NOTA:** Puoi usare `y` come operatore; `yw` copia una parola [word].  
 
 
+## Lezione 6.4: COPIA E INCOLLA DEL TESTO 
+
+**usa l'operatore** `y` **per copiare del testo e** `p` **per incollarlo**
+
+1. Vai alla linea indicata da ---> qui sotto, e metti il cursore dopo "a)".  
+2. Entra in Modalita' Visuale con `v` e metti il cursore davanti a "primo".  
+3. Batti `y` per copiare [yank] il testo evidenziato.  
+4. Muovi il curosre alla fine della linea successiva: `j$` .  
+5. Batti `p` per incollare [paste] il testo.  Poi batti: `a` secondo `ESC`.  
+6. Usa la Modalita' Visuale per selezionare " elemento.", copialo con `y`.  Vai alla fine della linea successiva con `j$` e incolla il testo con `p`.  
+
+---> a) questo e' il primo elemento.  b)  
+
+**NOTA:** Puoi usare `y` come operatore; `yw` copia una parola [word]. 
 
 
+## Lezione 6.5: SET [IMPOSTA] UN'OPZIONE 
+
+**Imposta un'opzione per ignorare maiuscole/minuscole durante la ricerca/sostituzione**  
+
+1. Ricerca 'nota' battendo: `/nota ENTER` .  Ripeti la ricerca piu' volte usando il tasto `n`.  
+2. Imposta l'opzione `ic` (Ignore Case, [Ignora maiuscolo/minuscolo])  battendo `:set ic`.  
+3. Ora ricerca ancora 'nota' premendo il tasto `n` .  Troverai adesso anche Nota e NOTA.  
+4. Imposta le opzionei `hlserach` e `incsearch` `:set hls is`.  
+5. Ora bati ancora il comando di ricerca, e guarda cosa succede: `/nota`.  
+6. Per disabilitare il riconoscimento di maiuscole/minuscole batti: `:set noic`.  
+
+**NOTA:** Per non evidenziare le occorenze trovate batti: `:nohlsearch` .  
+**NOTA:** Per ignorare maiuscole/minuscole solo per una ricerca, usa `\c` nel comando di ricerca: `/nota\c INVIO`
 
 
+## Lezione 6 SOMMARIO
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. Batti `o` per aggiungere una linea SOTTO il cursore ed entrare in Modalita Inserimento.  Batti `O` per aggiungere una linea SOPRA il cursore.  
+2. Batti `a` per inserire testo DOPO il cursore.  Batti `A` per inserire testo alla fine della linea.  
+3. Il comando `e` sposta il cursore alla fine di una parola.  
+4. L'operatore `y` copia del testo, `p` incolla del testo.  
+5. Batti `R` per entrare in Modalita' Replace, e ne esci premendo `ESC`.  
+6. Batti `:set xxx` per impostare l'opzione "xxx". Alcune opzioni sono:  
+	`ic` `ignorecase` ignorare maiuscole/minuscole nella ricerca  
+	`is` `incsearch` mostra occorenze parziali durante una ricerca  
+	`hls` `hlsearch` evidenzia tutte le occorenze di una ricerca.  Puooi usare sia il nome di un'opzione che quello abbreviato.
+7. Usa il prefisso "no" per annullare un'opzione: `:set noic`.  
 
 
