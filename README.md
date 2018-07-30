@@ -125,7 +125,7 @@ la Lezione 1.1 riempia completamente lo schermo.
 3. Per uscire da Vim batti: `ESC` `:q!` `INVIO` per uscire senza salvare
 			    `ESC` `:wq` `INVIO` per uscire e salvare le modifiche.
 
-**NOTA:** premendo `ESC` ritornerai in Modalita' Normale o annullerai un comando errato che puoi aver inserito in parte.
+**NOTA:** premendo `ESC` ritornerai in Modalità Normale o annullerai un comando errato che puoi aver inserito in parte.
 
 Ora continua con la Lezione 2.
 
@@ -339,10 +339,10 @@ Per la frequenza con cui capita di cancellare linee intere, chi ha disegnato Vi 
 
 ## Lezione 3 SOMMARIO
 
-1. Per iniziare del testo appena cancellato, batti `p` .Questo inserisce [pone] il testo cancellato DOPO il cursore (se era stata tolta una linea intera, questa verra' messa nella linea SOTTO il cursore)
+1. Per iniziare del testo appena cancellato, batti `p` .Questo inserisce [pone] il testo cancellato DOPO il cursore (se era stata tolta una linea intera, questa verrà messa nella linea SOTTO il cursore)
 2. Per rimpiazzare il carattere sotto il cursore, batti `r` e poi il carattere che vuoi sostituire.
 3. L'operatore change ti permette di cambiare dal cursore fino a dove arriva il movimento. Ad es. Batti `ce` per cambiare dal cursore fino alla fine della parola, `c$` per cambiare finoi alla linea.
-4. Il formato di `change` e':
+4. Il formato di `change` è:
 	`c` [numero] `movimento`
 
 Ora vai alla prossima Lezione.
@@ -355,12 +355,12 @@ Ora vai alla prossima Lezione.
 
 **NOTA:** Leggi l'intera Lezione prima di eseguire un qualsiasi passo!!
 
-1. Tieni premuto il tasto `CTRL` e batti `g`. Ossia batti `CTRL` `G`.  Un messaggio apparira' in fondo alla pagina con il NOME FILE e la posizione nel file.  
+1. Tieni premuto il tasto `CTRL` e batti `g`. Ossia batti `CTRL` `G`.  Un messaggio apparirà in fondo alla pagina con il NOME FILE e la posizione nel file.  
 Ricordati il numero della linea per il passo 3.  
 
-**NOTA:** La posizione del cursore si vede nell'angolo in basso a destra dello schermo, se e' impostata l'opzione `ruler` (righello, vedi `:help ruler`).  
+**NOTA:** La posizione del cursore si vede nell'angolo in basso a destra dello schermo, se è impostata l'opzione `ruler` (righello, vedi `:help ruler`).  
 2. Premi `G` [G Maiuscolo] per posizionarti in fondo al file.  Batti `gg` per posizionarti in cima al file.
-3. Batti il numero della linea in cui ti trovavi e poi `G`.  Questo ti riportera' fino alla fine in cui ti trovavi quando avevi premuto `CTRL` `g`.
+3. Batti il numero della linea in cui ti trovavi e poi `G`.  Questo ti riporterà fino alla fine in cui ti trovavi quando avevi premuto `CTRL` `g`.
 4. Se ti senti sicuro nel farlo, esegui passi da 1 a 3.
 
 
@@ -368,13 +368,13 @@ Ricordati il numero della linea per il passo 3.
 
 **Batti** `/` **seguito da una frase per ricercare quella frase**  
 
-1. In Modalita' Normale batti il carattere `/`.  Nota che la "/" e il cursore sono visibili in fondo dello schermo come quando si usa il comando `:` .  
+1. In Modalità Normale batti il carattere `/`.  Nota che la "/" e il cursore sono visibili in fondo dello schermo come quando si usa il comando `:` .  
 2. Adesso batti `errroore` `INVIO`.  Questa e' la parola che vuoi ricercare.
 3. Per ricercare ancora la stessa frase, batti `n`.  Per ricercare la stessa frase in direzione opposta, batti `N`.  
 4. Per ricercare una frase nella direzione opposta, usa `?` al posto di `/`.  
 5. Per tornare dove eri prima nel file premi `CTL` `O` (tieni premuto `CTRL` mentre premi la lettera O).  Ripeti `CTRL` `O` per andare ancora indietro.  Puoi usare `CTRL` `I` per tornare in avanti.  
 
----> "errroore" non e' il modo giusto di digitare errore;  errrore e' un errore.  
+---> "errroore" non è il modo giusto di digitare errore;  errrore è un errore.  
 **NOTA:** Quando la ricerca arriva a fine file, ricomincia dall'inizio del file, a me che l'opzione 'wrapscan' sia stata disattivata.  
 
 
@@ -384,12 +384,12 @@ Ricordati il numero della linea per il passo 3.
 
 1. Posiziona il cursore su una (,[ o { nella linea otto, indicata da --->
 2. Adesso batti il carattere `%`
-3. Il cursore si spostera' sulla parentesi corrispondente 
+3. Il cursore si sposterà sulla parentesi corrispondente 
 4. Batti `%` per muovere il cursore all'altra parentesi corrispondente.  
 
----> Questa ( e' una linea di test con (, [ ] e { } al suo interno ))  
+---> Questa ( è una linea di test con (, [ ] e { } al suo interno ))  
 
-**NOTA:**  Qusto e' molto utile nel "debug" di un programma con parentesi errate!
+**NOTA:**  Qusto è molto utile nel "debug" di un programma con parentesi errate!
 
 
 ## Lezione 4.4: L'OPERATORE SOSTITUZIONE (SUBSTITUTE)
@@ -399,9 +399,9 @@ Ricordati il numero della linea per il passo 3.
 1. Muovi il cursore fino alla linea qui sotto, indicata da --->. 
 2. Batti `s:/lla/la/g` .  Aggiungendo il flag g si chiede di sostituire "globalmente" sulla linea, ossia tutte le occorenze di "lla" sulla linea.  
 
---->  lla stagione migliore per lla fioritura e' lla primavera.
+--->  lla stagione migliore per lla fioritura è lla primavera.
 
-4. Per cambiare ogni ricorrenza di una stirnga di caratteri tra due linee, batti `#,#s/vecchio/nuovo/g` dove  
+4. Per cambiare ogni ricorrenza di una stringa di caratteri tra due linee, batti `#,#s/vecchio/nuovo/g` dove  
   #,# sono i numeri che delimitano il gruppo di linee in cui si vuole sostituire.  
   Batti `:%s/vecchio/nuovo/g` per cambiare ogni occorenza nell'intero file.  
   Batti `%s/vecchio/nuovo/gc`  per trovare ogni occorenza nell'intero file ricevendo per ognuna una richiesta se effettuare o meno la sostituzione.  
@@ -428,24 +428,23 @@ DOPO una ricerca batti `n` per trovare la prossima occorenza nella stessa direzi
 
 **Batti** `:!` **seguito da un comando esterno per eseguire quel comando**
 
-1. Batti il comando `:` per posizionare il cursore in fondo allo schermo.  Cio' ti permette di immettere un comando alla linea comandi.  
-2. Adesso batti il carattere `!` (punto esclamativo).  Cio' ti permette di eseguire qualsiasi comando esterno si possa eseguire nella "shell".  
-3. Ad esempio batti `ls` dopo il `!` e poi premi `INVIO`.  Questo visualizza una lista della tua directoru, proprio come se fossi in una "shell".  Usa `:!dir` se `ls` non funziona.[Unix: ls MS-DOS: dir]  
+1. Batti il comando `:` per posizionare il cursore in fondo allo schermo.  Ciò ti permette di immettere un comando alla linea comandi.  
+2. Adesso batti il carattere `!` (punto esclamativo).  Ciò ti permette di eseguire qualsiasi comando esterno si possa eseguire nella "shell".  
+3. Ad esempio batti `ls` dopo il `!` e poi premi `INVIO`.  Questo visualizza una lista della tua directory, proprio come se fossi in una "shell".  Usa `:!dir` se `ls` non funziona.[Unix: ls MS-DOS: dir]  
 
 **Nota:** E' possibile in questo modo eseguire un comando a piacere, specificando anche dei parametri per i comandi stessi.  
 **Nota:** Tutti i comandi `:` devono essere terminati premendo `INVIO`.  Da qui in avanti non li ripeteremo ogni volta.  
-
 
 
 ## Lezione 5.2: ANCORA SULLA SCRITTURA DEI FILE
 
 **Batti** `:!` **seguito da un comando esterno per eseguire quel comando**
 
-1. Batti il comando `:` per posizionare il cursore in fondo allo schermo.  Cio' ti permette di mmettere un comando dalla linea comandi.  
-2. Adesso batti il carattere `!` (punto esclamativo).  Cio' ti permette di eseguire qualsiasi comando esterno si possa eseguire nella "shell".  
+1. Batti il comando `:` per posizionare il cursore in fondo allo schermo.  Ciò ti permette di mmettere un comando dalla linea comandi.  
+2. Adesso batti il carattere `!` (punto esclamativo).  Ciò ti permette di eseguire qualsiasi comando esterno si possa eseguire nella "shell".  
 3. Ad esempio batti `ls` dopo il `!` e poi premi `INVIO`.  Questo visualizza una lista della tua directory, proprio come se fossi in una "shell".  Usa `:!dir` se `ls` non funziona [Unix: ls MS-DOS: dir]
 
-**Nota:** Se esci da Vim e riesegui Vim battendo `vim TEST`, il file aperto sara' una copia esatta di 'tutor.it' al momento del salvataggio 
+**Nota:** Se esci da Vim e riesegui Vim battendo `vim TEST`, il file aperto sarà una copia esatta di 'tutor.it' al momento del salvataggio 
 5. Ora cancella il file battendo (MS-DOS): `:!del TEST` o (Unix): `:!rm TEST` .  
 
 
@@ -457,29 +456,29 @@ DOPO una ricerca batti `n` per trovare la prossima occorenza nella stessa direzi
 2. Premi `v` e muovi il cursore fino alla linea numerata 5, qui sotto .  Nota che il testo viene evidenziato.  
 3. Batti il carattere `:`, in fondo allo schermo apparira' `:'<,'>` .  
 4. Batti `w TEST`, dove `TEST` e' il nome di un file non ancora esistente .  Verifica che si veda `:'<,'>W TEST` prima di dare `INVIO`.  
-5. Vim scrivera' nel file TEST le linee che hai selezionato.  Usa `:!dir` o `:!ls` per controllare che esiste.  Non cancellarlo ora! Ti servira' nella prossima lezione.  
+5. Vim scriverà nel file TEST le linee che hai selezionato.  Usa `:!dir` o `:!ls` per controllare che esiste.  Non cancellarlo ora! Ti servira' nella prossima lezione.  
 
-**Nota:** Battere `v` inizia una selezione visuale.  Puoi muore il cursore come vuoi e rendere la selezione piu' piccola o piu' grande .  Poi puoi usare un operatore per agire sul testo selezionato. Ad es: `d` cancella il testo.  
+**Nota:** Battere `v` inizia una selezione visuale.  Puoi muore il cursore come vuoi e rendere la selezione più piccola o più grande .  Poi puoi usare un operatore per agire sul testo selezionato. Ad es: `d` cancella il testo.  
 
 
 ## Lezione 5 SOMMARIO 
 
 1. `:!comando` esegue un comando esterno.  Alcuni esempi utili sono [in MSDOS]:  `:!dir` visualizza lista directory  `:!del NOMEFILE` cancella file NOMEFILE.
 2. `:w NOMEFILE` scrive su disco il file che stai editando con NOMEFILE.  
-3. `v movimento :w NOMEFILE` da disco e lo inserisce nel file che stai modificando, dopo la linea in cui e' posizionato il cursore.  
-4. `:r NOMEFILE` legge il file NOMEFILE da disco e lo inserisce nel file che stai modificando, dopo la lina in cui e' posizionato il cursore.  
-5. `:r !dir` legge l'output del ocmando dir e lo inserisce dopo la linea in cui e' posizionato il cursore.  
+3. `v movimento :w NOMEFILE` da disco e lo inserisce nel file che stai modificando, dopo la linea in cui è posizionato il cursore.  
+4. `:r NOMEFILE` legge il file NOMEFILE da disco e lo inserisce nel file che stai modificando, dopo la lina in cui è posizionato il cursore.  
+5. `:r !dir` legge l'output del ocmando dir e lo inserisce dopo la linea in cui è posizionato il cursore.  
 
 
 ## Lezione 6.1: IL COMANDO OPEN [APRIRE]
 
-**Batti** `o` **per aprire una linea sotto il cursore e passare in Modalita' Inserimento.**
+**Batti** `o` **per aprire una linea sotto il cursore e passare in Modalità Inserimento.**
 
 1. Muovi il cursore fino alla linea qui sotto, indicata da --->.
-2. Batti la lettera minuscola `o` per aprire una linea sotto il cursore e passare in Modalita' Inserimento .
-3. Poi inserisci del testo e premi `ESC` per uscire dalla Modalita' Inserimento.  
+2. Batti la lettera minuscola `o` per aprire una linea sotto il cursore e passare in Modalità Inserimento .
+3. Poi inserisci del testo e premi `ESC` per uscire dalla Modalità Inserimento.  
 
----> Dopo battuto `o` il cursore e' sulla linea aperta (in Modalita' Inserimento).  
+---> Dopo battuto `o` il cursore e' sulla linea aperta (in Modalità Inserimento).  
 
 4. Per aprire una linea SOPRA il cursore, batti una `O` maiuscola, invece che una `o` minuscola.  Prova sulla linea qui sotto.  
 
@@ -491,20 +490,20 @@ DOPO una ricerca batti `n` per trovare la prossima occorenza nella stessa direzi
 **Batti** `a` **per inserire testo DOPO il cursore .**  
 
 1. Muovi il cursore all'inizio della liunea qui sotto, indicata da --->
-2. Batti `e` finche' il cursore arriva alla fine di  li.  
+2. Batti `e` finchè il cursore arriva alla fine di  li.  
 3. batti una `a` (minuscola) per aggiungere testo DOPO il cursore.  
-4. Completa la parola come mostrato nella linea successiva.  Premi `ESC` per uscire dalla Modalita' Inserimento.  
+4. Completa la parola come mostrato nella linea successiva.  Premi `ESC` per uscire dalla Modalità Inserimento.  
 5. Usa `e` per passare alla successiva parola incompleta e ripeti i passi 3 e 4.  
 
----> Questa li yti permettera' di esercit ad aggiungere testo a una linea.  
----> Questa linea ti permettera' di esercitarti ad aggiungere testo a una linea.  
+---> Questa li yti permetterà di esercit ad aggiungere testo a una linea.  
+---> Questa linea ti permetterà di esercitarti ad aggiungere testo a una linea.  
 
-**NOTA:** `a`,`i` ed `A` entrano sempre in Modalita' Iserimento, la sola differenza e' dove verranno inseriti i caratteri .  
+**NOTA:** `a`,`i` ed `A` entrano sempre in Modalità Iserimento, la sola differenza è dove verranno inseriti i caratteri .  
 
 
 ## Lezione 6.3: UN ALTRO MODO DI RIMPIAZZARE [REPLACE]
 
-**Bati una** `R` **maiuscola per rimpiazzare piu' di un carattere**
+**Bati una** `R` **maiuscola per rimpiazzare più di un carattere**
 
 1. Muovi il cursore alla prima linea qui sotto, indicata da --->.  Muovi il cursore all'inizio del primo xxx.  
 2. Ora batti `R` e batti il numero che vedi nella linea seguente, in modo che rimpiazzi l' xxx.  
@@ -524,11 +523,11 @@ DOPO una ricerca batti `n` per trovare la prossima occorenza nella stessa direzi
 1. Vai alla linea indicata da ---> qui sotto, e metti il cursore dopo "a)".  
 2. Entra in Modalita' Visuale con `v` e metti il cursore davanti a "primo".  
 3. Batti `y` per copiare [yank] il testo evidenziato.  
-4. Muovi il curosre alla fine della linea successiva: `j$` .  
+4. Muovi il cursore alla fine della linea successiva: `j$` .  
 5. Batti `p` per incollare [paste] il testo.  Poi batti: `a` secondo `ESC`.  
 6. Usa la Modalita' Visuale per selezionare " elemento.", copialo con `y`.  Vai alla fine della linea successiva con `j$` e incolla il testo con `p`.  
 
----> a) questo e' il primo elemento.  b)  
+---> a) questo è il primo elemento.  b)  
 
 **NOTA:** Puoi usare `y` come operatore; `yw` copia una parola [word]. 
 
@@ -554,7 +553,7 @@ DOPO una ricerca batti `n` per trovare la prossima occorenza nella stessa direzi
 2. Batti `a` per inserire testo DOPO il cursore.  Batti `A` per inserire testo alla fine della linea.  
 3. Il comando `e` sposta il cursore alla fine di una parola.  
 4. L'operatore `y` copia del testo, `p` incolla del testo.  
-5. Batti `R` per entrare in Modalita' Replace, e ne esci premendo `ESC`.  
+5. Batti `R` per entrare in Modalità Replace, e ne esci premendo `ESC`.  
 6. Batti `:set xxx` per impostare l'opzione "xxx". Alcune opzioni sono:  
 	`ic` `ignorecase` ignorare maiuscole/minuscole nella ricerca  
 	`is` `incsearch` mostra occorenze parziali durante una ricerca  
@@ -592,14 +591,14 @@ Puoi trovare aiuto su quasi tutto, dando un argomento al comando `:help`.  Prova
 	`:r $VIMRUNTIME/vimrc_example.vim`  
 3. Scrivi il file con:  `:w`  
 
-La prossima volta che apri Vim, sara' abilitata la colorazione sintattica.  Puoi aggoiungere a questo file "vimrc" tutte le tue impostazioni preferite.  Per maggiorni informazioni bati: `:help vimrc-intro`.  
+La prossima volta che apri Vim, sarà abilitata la colorazione sintattica.  Puoi aggoiungere a questo file "vimrc" tutte le tue impostazioni preferite.  Per maggiorni informazioni bati: `:help vimrc-intro`.  
 
 
 ## Lezione 7.3: COMPLETAMENTO  
 
 **Completamento linea comandi con** `CtRL-D` **e** `TAB`  
 
-1. IMposta Vim in modalita' compatibile: `:set nocp`  
+1. IMposta Vim in modalità compatibile: `:set nocp`  
 2. Guarda i file esistenti nella directory: `:!ls` o `:!dir`  
 3. Batti l'inizio di un comando: `:e`  
 4. Premi `CTRL-D` e Vim ti mostra una lista di comandi che iniziano per "e".  
@@ -607,7 +606,7 @@ La prossima volta che apri Vim, sara' abilitata la colorazione sintattica.  Puoi
 6. Ora batti uno spazio e l'inizio del nome di un file esistente: `:edit FIL`.  
 7. Premi `TAB`. Vim completera' il nome del file (se e' il solo possibile).  
 
-**NOTA:** Il completamento e' disponibile per molti comandi.  Prova a battere `CTRL-D` e `TAB`.  Particolarmente utile per `:help`.  
+**NOTA:** Il completamento è disponibile per molti comandi.  Prova a battere `CTRL-D` e `TAB`.  Particolarmente utile per `:help`.  
 
 
 ## Lezione 7 SOMMARIO  
