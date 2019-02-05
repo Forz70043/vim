@@ -348,7 +348,7 @@ Per la frequenza con cui capita di cancellare linee intere, chi ha disegnato Vi 
 Ora vai alla prossima Lezione.
 
 
-##Lezione 4.1: POSIZIONAMENTO E SITUAZIONE FILE
+## Lezione 4.1: POSIZIONAMENTO E SITUAZIONE FILE
 
 **Batti** `CTRL` `G` **per vedere a che punto sei nel file e la situazione del file.**  
 **Batti** `G` **per raggiungere una linea nel file.**
